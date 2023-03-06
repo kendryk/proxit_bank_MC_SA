@@ -1,7 +1,14 @@
 package model;
 
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity
 public class Client {
 
+    @Id
+    @GeneratedValue
     private int id;
     private String nom;
     private String prenom;
@@ -10,7 +17,15 @@ public class Client {
     private String ville;
     private String tel;
 
-    /* **************  CONSTRUCTEURS   *******************  */
+    @OneToMany(mappedBy = "proprietaire", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    private Set<CompteCourant> comptes = new HashSet<>();
+
+    //#region *******  CONSTRUCTEURS   *******************  */
+
+    protected Client() {
+
+    }
+
     public Client(String nom, String prenom, String adresse, String cp, String ville, String tel) {
         this.nom = nom;
         this.prenom = prenom;
@@ -19,8 +34,10 @@ public class Client {
         this.ville = ville;
         this.tel = tel;
     }
+    //#endregion
 
-    /* **************   GETTERS SETTERS    *******************  */
+    //#region *******   GETTERS SETTERS    *******************  */
+
     public int getId() {
         return id;
     }
@@ -77,7 +94,18 @@ public class Client {
         this.tel = tel;
     }
 
-    /* **************   TO STRING   *******************  */
+    public Set<CompteCourant> getComptes() {
+        return comptes;
+    }
+
+    public void setComptes(Set<CompteCourant> comptes) {
+        this.comptes = comptes;
+    }
+
+    //#endregion
+
+    //#region *******   TO STRING   *******************  */
+
     @Override
     public String toString() {
         return "Client{" +
@@ -86,7 +114,9 @@ public class Client {
                 ", adresse='" + adresse + '\'' +
                 ", cp='" + cp + '\'' +
                 ", ville='" + ville + '\'' +
-                ", tel=" + tel +
+                ", tel='" + tel + '\'' +
                 '}';
     }
+
+    //#endregion
 }

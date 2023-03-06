@@ -1,21 +1,54 @@
 package model;
 
-public class CompteCourant extends Compte {
+import javax.persistence.*;
+import java.time.LocalDateTime;
 
+@Entity
+public class CompteCourant {
+
+    @Id
+    @GeneratedValue
+    private Integer id;
+    private Double solde;
+    private LocalDateTime dateCreation;
     private Double decouvertMax;
-
     private TypeCarte typeCarte;
+    public enum TypeCarte {ELECTRON, PREMIER}
 
-    public CompteCourant(Integer noCompte, Double solde, Client proprietaire, Double decouvertMax, TypeCarte typeCarte) {
-        super(noCompte, solde, proprietaire);
+    @ManyToOne(cascade={CascadeType.PERSIST})
+    @JoinColumn(name = "client_id")
+    private Client proprietaire;
+
+    //#region *******  CONSTRUCTEURS   *******************  */
+    public CompteCourant() {
+
+    }
+
+    public CompteCourant(Double solde, Client proprietaire, Double decouvertMax, TypeCarte typeCarte) {
+        this.solde = solde;
+        this.proprietaire = proprietaire;
+        this.dateCreation = LocalDateTime.now();
         this.decouvertMax = decouvertMax;
         this.typeCarte = typeCarte;
     }
 
-    public CompteCourant(Integer noCompte, Double solde, Client proprietaire, TypeCarte typeCarte) {
-        super(noCompte, solde, proprietaire);
+    public CompteCourant(Double solde, Client proprietaire, TypeCarte typeCarte) {
+        this.solde = solde;
+        this.proprietaire = proprietaire;
+        this.dateCreation = LocalDateTime.now();
         this.decouvertMax = 1000.0;
         this.typeCarte = typeCarte;
+    }
+    //#endregion
+
+    //#region *******  GETTERS SETTERS   *******************  */
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Double getDecouvertMax() {
@@ -33,15 +66,10 @@ public class CompteCourant extends Compte {
     public void setTypeCarte(TypeCarte typeCarte) {
         this.typeCarte = typeCarte;
     }
+    //#endregion
 
-    @Override
-    public String toString() {
-        return "CompteCourant{" +
-                "decouvertMax=" + decouvertMax +
-                ", typeCarte=" + typeCarte +
-                "} " + super.toString();
-    }
 
-    public enum TypeCarte {ELECTRON, PREMIER}
+
+
 
 }

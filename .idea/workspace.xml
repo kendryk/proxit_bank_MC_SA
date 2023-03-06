@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002424ce-06a2-4736-91e2-d163eed1604d" name="Changes" comment="Install JPA">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Agence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Compte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/CompteCourant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/CompteEpargne.java" afterDir="false" />
+    <list default="true" id="002424ce-06a2-4736-91e2-d163eed1604d" name="Changes" comment="created model (base)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Agence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Compte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CompteCourant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CompteCourant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CompteEpargne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestClientPersist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestClientPersist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +50,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Legion/eclipse-workspace/proxitbank_MC_SA/src/main/resources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Legion/eclipse-workspace/proxitbank_MC_SA/src/main/resources&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Legion\eclipse-workspace\proxitbank_MC_SA\src\main\resources" />
@@ -94,19 +94,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="featureCedric" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
