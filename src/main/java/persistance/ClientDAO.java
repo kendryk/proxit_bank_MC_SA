@@ -9,10 +9,11 @@ public interface ClientDAO {
     static void save(EntityManager entityManager, Client client){
         entityManager.persist(client);
     }
-    static void delete(EntityManager entityManager, Client client){
-        entityManager.remove(client);
-    }
     static Client find(EntityManager entityManager, Long id ){
         return entityManager.find(Client.class,id);
     }
+    static void delete(EntityManager entityManager, Client client){
+        entityManager.remove(client);
+    }
+
 }
