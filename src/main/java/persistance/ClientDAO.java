@@ -12,7 +12,7 @@ public interface ClientDAO {
     static void delete(EntityManager entityManager, Client client){
         entityManager.remove(client);
     }
-    static void find(EntityManager entityManager, Long id ){
-        entityManager.find(Client.class,id);
+    static Client find(EntityManager entityManager, Long id ){
+        return entityManager.find(Client.class,id);
     }
 }
