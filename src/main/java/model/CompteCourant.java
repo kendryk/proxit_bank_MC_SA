@@ -66,6 +66,30 @@ public class CompteCourant {
     public void setTypeCarte(TypeCarte typeCarte) {
         this.typeCarte = typeCarte;
     }
+
+    public Double getSolde() {
+        return solde;
+    }
+
+    public void setSolde(Double solde) {
+        this.solde = solde;
+    }
+
+    public LocalDateTime getDateCreation() {
+        return dateCreation;
+    }
+
+    public void setDateCreation(LocalDateTime dateCreation) {
+        this.dateCreation = dateCreation;
+    }
+
+    public Client getProprietaire() {
+        return proprietaire;
+    }
+
+    public void setProprietaire(Client proprietaire) {
+        this.proprietaire = proprietaire;
+    }
     //#endregion
 
 

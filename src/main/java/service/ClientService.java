@@ -1,6 +1,7 @@
 package service;
 
 import model.Client;
+import model.CompteCourant;
 import persistance.ClientDAO;
 
 import javax.persistence.EntityManager;
@@ -18,6 +19,11 @@ public class ClientService {
     }
     public static void deleteClient(EntityManager entityManager, Client client){
         ClientDAO.delete(entityManager, client);
+    }
+    public static void addCompte(EntityManager entityManager, Client client, CompteCourant compteCourant){
+        client.getComptes().add(compteCourant);
+        compteCourant.setProprietaire(client);
+
     }
 
 

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002424ce-06a2-4736-91e2-d163eed1604d" name="Changes" comment="fonction crérer client OK">
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistance/ClientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistance/ClientDAO.java" afterDir="false" />
+    <list default="true" id="002424ce-06a2-4736-91e2-d163eed1604d" name="Changes" comment="method supprimer client OK">
+      <change afterPath="$PROJECT_DIR$/src/main/java/persistance/CompteCourantDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/CompteCourantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CompteCourant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CompteCourant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentation/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ClientService.java" afterDir="false" />
     </list>
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,12 +53,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/33631/IdeaProjects/test"
+    "last_opened_file_path": "C:/Users/33631/IdeaProjects/simpleentityJPAPostgresRelationMtoM"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Legion\eclipse-workspace\proxitbank_MC_SA\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -123,7 +128,28 @@
       <option name="project" value="LOCAL" />
       <updated>1678116778366</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="method chercher client OK">
+      <created>1678117118612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678117118612</updated>
+    </task>
+    <task id="LOCAL-00005" summary="method MAJ client OK">
+      <created>1678117251722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678117251722</updated>
+    </task>
+    <task id="LOCAL-00006" summary="method supprimer client OK">
+      <created>1678117359917</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678117359917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +167,9 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Install JPA" />
     <MESSAGE value="fonction crérer client OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="fonction crérer client OK" />
+    <MESSAGE value="method chercher client OK" />
+    <MESSAGE value="method MAJ client OK" />
+    <MESSAGE value="method supprimer client OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="method supprimer client OK" />
   </component>
 </project>
