@@ -11,7 +11,7 @@
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost/projectbank"/>
             <property name="jakarta.persistence.jdbc.user" value="postgres"/>
-            <property name="jakarta.persistence.jdbc.password" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Postgres77"/>
 
             <!-- SQL dialect -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>

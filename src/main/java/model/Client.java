@@ -9,7 +9,7 @@ public class Client {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
     private String nom;
     private String prenom;
     private String adresse;
@@ -38,11 +38,11 @@ public class Client {
 
     //#region *******   GETTERS SETTERS    *******************  */
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
